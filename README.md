@@ -1,4 +1,4 @@
-# n8n-nodes-ntfy.sh
+# n8n-nodes-ntfy-sh
 
 [n8n community package](https://docs.n8n.io/integrations/community-nodes/installation/gui-install/) to push messages via [ntfy.sh](https://ntfy.sh/)
 

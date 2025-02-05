@@ -1,5 +1,5 @@
 {
-  "name": "n8n-nodes-ntfy.sh",
+  "name": "n8n-nodes-ntfy-sh",
   "version": "1.0.0",
   "description": "n8n community package to push messages via ntfy.sh",
   "keywords": [
