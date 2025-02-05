@@ -1,0 +1,44 @@
+{
+  "name": "@ivov/n8n-nodes-ntfy",
+  "version": "1.0.0",
+  "description": "n8n community package to push messages via ntfy.sh",
+  "keywords": [
+    "n8n-community-node-package",
+    "ntfy"
+  ],
+  "license": "MIT",
+  "author": {
+    "name": "Iván Ovejero"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ivov/n8n-nodes-ntfy.git"
+  },
+  "engines": {
+    "node": ">=20.15",
+    "pnpm": ">=9.15"
+  },
+  "packageManager": "pnpm@9.15.1",
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc && cp src/*.svg dist/"
+  },
+  "n8n": {
+    "n8nNodesApiVersion": 1,
+    "credentials": [
+      "dist/NtfyApi.credentials.js"
+    ],
+    "nodes": [
+      "dist/Ntfy.node.js"
+    ]
+  },
+  "peerDependencies": {
+    "n8n-workflow": "*"
+  },
+  "devDependencies": {
+    "typescript": "^5.7.3"
+  }
+}

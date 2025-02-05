@@ -1,0 +1,17 @@
+services:
+  ntfy:
+    image: binwiederhier/ntfy
+    container_name: ntfy
+    command: serve
+    restart: unless-stopped
+    environment:
+      TZ: Europe/Berlin
+      NTFY_BASE_URL: https://ntfy.domain.com
+      NTFY_CACHE_FILE: /var/lib/ntfy/cache.db
+      NTFY_AUTH_FILE: /var/lib/ntfy/auth.db
+      NTFY_AUTH_DEFAULT_ACCESS: deny-all
+    user: 1000:1000
+    volumes:
+      - /var/lib/ntfy:/var/lib/ntfy
+    ports:
+      - 8088:80
