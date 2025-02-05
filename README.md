@@ -6,7 +6,7 @@
 - Support for self-hosted ntfy instances
 - Credentials for basic + bearer + query auth
 
-<img src="docs/ndv.png" width="350">
+<img src="docs/ndv.png" width="400">
 
 ## Docs
 
